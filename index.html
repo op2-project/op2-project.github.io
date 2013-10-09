@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="ico/favicon.ico">
 
     <title>Carousel Template for Bootstrap</title>
 
@@ -27,7 +27,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-default navbar-static-top">
+        <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,7 +76,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <img src='img/IMG_1078.JPG'>
+              <img src='img/IMG_1129.png'>
               <!-- <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide"> -->
               <div class="container">
                 <div class="carousel-caption">
@@ -87,7 +87,7 @@
               </div>
             </div>
             <div class="item">
-              <img src='img/IMG_1098.JPG'>
+              <img src='img/IMG_1080.JPG'>
               <!-- <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide"> -->
               <div class="container">
                 <div class="carousel-caption">
@@ -296,7 +296,7 @@
     <div class="container marketing">
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right" id='top_scroll'><a href="#">Back to top</a></p>
         <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </div>
@@ -307,5 +307,25 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        // Handler for .ready() called.
+        $('#top_scroll').hide();
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+            //console.log(e.target); // activated tab
+            //console.log($(e.target).attr('href'));
+            if ( $(e.target).attr('href') != "#home" && $(e.target).attr('href') != "#about" && $(e.target).attr('href') != "#contact" ) {
+                $('.navbar-nav li').removeClass('active');
+                $('#top_scroll').show();
+            } else if ( $(e.target).attr('href') == "#home" ) {
+                //console.log("hide");
+                $('#top_scroll').hide();
+            } else {
+                $('#top_scroll').show();
+            }
+            //e.relatedTarget // previous tab
+        });
+      });
+    </script>
   </body>
 </html>
