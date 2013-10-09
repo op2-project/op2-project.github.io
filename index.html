@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">OP<sup>2</sup> - Flacon</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#about" data-toggle="tab">About</a></li>
+                <li><a href="#contact" data-toggle="tab">Contact</a></li>
+<!--                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="home">
+        <!-- Carousel
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src='img/IMG_1078.JPG'>
+              <!-- <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide"> -->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Easy to assemble!</h1>
+                  <p>With the schematics and the hardware components, the phone is easy to assemble</p>
+                  <p><a class="btn btn-large btn-primary" href="#">Schematics</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src='img/IMG_1098.JPG'>
+              <!-- <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide"> -->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Open Source.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src='img/IMG_1108.JPG'>
+              <!-- <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide"> -->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Create your own design</h1>
+                  <p>You can put your hardware in any case you want as long as the hardware components fit.</p>
+                  <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div><!-- /.carousel -->
+
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img src='img/IMG_1119.jpg' class="img-circle">
+              <h2>Features</h2>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              <p><a class="btn btn-default" href="#features" data-toggle="tab">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src='img/IMG_1109.JPG' class="img-circle">
+              <h2>Design</h2>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p><a class="btn btn-default" href="#design" data-toggle="tab">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src='img/IMG_1116.JPG' class="img-circle">
+              <!-- <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image"> -->
+              <h2>Downloads</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn btn-default" href="#download" data-toggle="tab">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+
+        </div><!-- /.container -->
+      </div>
+      <div class="tab-pane" id="about">
+        <div class='container marketing'>
+          <h1 class='page-header'>About</h1>
+        </div>
+      </div>
+      <div class="tab-pane" id="contact">
+        <div class='container marketing'>
+          <h1 class='page-header'>Contact</h1>
+        </div>
+      </div>
+      <div class="tab-pane" id="features">
+        <div class='container'>
+          <h1 class='page-header'>Features</h1>
+        </div>
+      </div>
+      <div class="tab-pane" id="design">
+        <div class='container marketing'>
+          <!-- START THE FEATURETTES -->
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Design <span class="text-muted">Standard components</span></h2>
+              <p class="lead">This page describes the design and schemas used in the project.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="img/Falcon2_bb_small.png" alt="Generic placeholder image">
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <h2>Breadbord</h2>
+          <div class='row'>
+            <img class="img-responsive col-lg-offset-2 col-lg-8" src="img/Falcon2_bb.png" alt="breaddboard">
+          </div>
+          <h2>Schema</h2>
+          <div class='row'>
+            <img class="img-responsive col-lg-offset-2 col-lg-8" src="img/Falcon2_schema.png" alt="schema">
+          </div>
+          <h2>Components</h2>
+          The project uses the following components:
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>Label</th>
+                <th>Part Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>IC1</td>
+                <td>MCP23017 I2C I/O Expander</td>
+              </tr><tr>
+                <td>LED1</td>
+                <td>Red LED - 5mm</td>
+              </tr><tr>
+                <td>R1</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R2</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R3</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R4</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R5</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R6</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R7</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>R8</td>
+                <td>Rotary Potentiometer (Small)</td>
+              </tr><tr>
+                <td>Raspberry Pi rev2</td>
+                <td>Raspberry Pi rev2</td>
+              </tr><tr>
+                <td>S1</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>S2</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>S3</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>S4</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>S5</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>S6</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>U1</td>
+                <td>LCD-16X2</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Shopping List</h2>
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>Amount</th>
+                <th>Part Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>MCP23017 I2C I/O Expander</td>
+              </tr><tr>
+                <td>1</td>
+                <td>Red LED - 5mm</td>
+              </tr><tr>
+                <td>7</td>
+                <td>220 Ω Resistor</td>
+              </tr><tr>
+                <td>1</td>
+                <td>Rotary Potentiometer (Small)</td>
+              </tr><tr>
+                <td>1</td>
+                <td>Raspberry Pi rev2</td>
+              </tr><tr>
+                <td>6</td>
+                <td>Pushbutton</td>
+              </tr><tr>
+                <td>1</td>
+                <td>LCD-16X2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="download">
+        <div class='container marketing'>
+          <h1 class='page-header'>Download</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
