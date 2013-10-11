@@ -147,14 +147,20 @@
       </div>
       <div class="tab-pane" id="falcon">
         <div class='container marketing'>
-            <h1 class='page-header'>Falcon</h1>
-            <p>
-            Falcon is the first prototype we built with OP<sup>2</sup>, here is how it looks like:
-            <br/>
-              <img class="img-responsive" src="img/op2-falcon-buttons.png">
-            <br/>
-            Looks awesome, doesn't it?
-            </p>
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">Falcon</h2>
+                <p class="lead">Falcon is the first prototype we built with OP<sup>2</sup>, here is how it looks like.
+                  <br/></br/>Looks awesome, doesn't it?</p>
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-responsive" src="img/IMG_1128.JPG" alt="falcon_buttons">
+              </div>
+            </div>
+          <hr class="featurette-divider">
+          <div class='row'>
+            <img class="img-responsive col-lg-offset-2 col-lg-8" src="img/op2-falcon-buttons.png" alt="falcon_buttons">
+          </div>
         </div>
       </div>
       <div class="tab-pane" id="contact">
@@ -170,23 +176,33 @@
         </div>
       </div>
       <div class="tab-pane" id="features">
-        <div class='container'>
-          <h1 class='page-header'>Features</h1>
-          <p>
-          Project OP<sup>2</sup> currently implements the following features:
-          <ul>
-              <li>HD audio calls</li>
-              <li>Multiple SIP accounts</li>
-              <li>Speed Dialing</li>
-              <li>Web configuration interface</li>
-              <li>Built with SIP SIMPLE SDK</li>
-              <li>REST API to control everything</li>
-          </ul>
-          Since it's based on SIP SIMPLE SDK, more features available in the SDK wil be made available
-          in OP<sup>2</sup> in the future.
-          </p>
+        <div class='container marketing'>
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Features</h2>
+              <p class='lead'>
+                Project OP<sup>2</sup> currently implements the following features:
+                <ul>
+                    <li>HD audio calls</li>
+                    <li>Multiple SIP accounts</li>
+                    <li>Speed Dialing</li>
+                    <li>Web configuration interface</li>
+                    <li>Built with SIP SIMPLE SDK</li>
+                    <li>REST API to control everything</li>
+                </ul>
+                Since it's based on SIP SIMPLE SDK, more features available in the SDK wil be made available
+                in OP<sup>2</sup> in the future.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="img/Cloud.png" alt="falcon_buttons">
+            </div>
+          </div>
+          <hr class="featurette-divider">
         </div>
       </div>
+
+
       <div class="tab-pane" id="design">
         <div class='container marketing'>
           <!-- START THE FEATURETTES -->
@@ -201,6 +217,7 @@
             </div>
           </div>
           <hr class="featurette-divider">
+
           <h2>Breadbord</h2>
           <div class='row'>
             <img class="img-responsive col-lg-offset-2 col-lg-8" src="img/Falcon2_bb.png" alt="breaddboard">
@@ -353,14 +370,14 @@
         $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
             //console.log(e.target); // activated tab
             //console.log($(e.target).attr('href'));
-            if ( $(e.target).attr('href') != "#home" && $(e.target).attr('href') != "#about" && $(e.target).attr('href') != "#contact" ) {
+            if ( $(e.target).attr('href') != "#home" && $(e.target).attr('href') != "#falcon" && $(e.target).attr('href') != "#contact" ) {
                 $('.navbar-nav li').removeClass('active');
-                $('#top_scroll').show();
+                //$('#top_scroll').show();
             } else if ( $(e.target).attr('href') == "#home" ) {
                 //console.log("hide");
-                $('#top_scroll').hide();
+                //$('#top_scroll').hide();
             } else {
-                $('#top_scroll').show();
+                //$('#top_scroll').show();
             }
             //e.relatedTarget // previous tab
         });
